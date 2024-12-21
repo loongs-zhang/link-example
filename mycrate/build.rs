@@ -158,5 +158,6 @@ fn main() {
         }
     }
     // link dylib
+    println!("cargo:rustc-link-search=native={:?}", deps);
     println!("cargo:rustc-link-lib=dylib=dep");
 }
