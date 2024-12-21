@@ -5,3 +5,6 @@ edition = "2021"
 
 [dependencies]
 dep = { version = "0.1.0", path = "../dep" }
+
+[build-dependencies]
+cargo_metadata = "0.18.1"
