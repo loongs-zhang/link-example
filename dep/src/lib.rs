@@ -15,5 +15,5 @@ pub unsafe extern "C" fn nanosleep(rqtp: *const timespec, rmtp: *mut timespec) -
         (*rmtp).tv_sec = 0;
         (*rmtp).tv_nsec = 0;
     }
-    0
+    -1
 }
