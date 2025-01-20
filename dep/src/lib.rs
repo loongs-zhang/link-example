@@ -7,6 +7,7 @@ pub extern "C" fn open_coroutine_init() -> c_int {
     0
 }
 
+#[cfg(unix)]
 #[no_mangle]
 pub unsafe extern "C" fn nanosleep(rqtp: *const timespec, rmtp: *mut timespec) -> c_int {
     eprintln!("hook nanosleep works");
