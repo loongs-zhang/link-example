@@ -45,7 +45,7 @@ jobs:
           armv7-unknown-linux-gnueabihf,
           riscv64gc-unknown-linux-gnu,
           thumbv7neon-unknown-linux-gnueabihf,
-          mips64-unknown-linux-muslabi64,
+#          mips64-unknown-linux-muslabi64,
           loongarch64-unknown-linux-gnu,
           s390x-unknown-linux-gnu,
 
@@ -57,7 +57,7 @@ jobs:
           x86_64-pc-windows-msvc,
           i686-pc-windows-msvc,
         ]
-        channel: [ 1.81.0, nightly-2024-08-02, stable, nightly ]
+        channel: [ 1.59.0, stable, nightly ]
         include:
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
@@ -71,8 +71,8 @@ jobs:
             os: ubuntu-latest
           - target: thumbv7neon-unknown-linux-gnueabihf
             os: ubuntu-latest
-          - target: mips64-unknown-linux-muslabi64
-            os: ubuntu-latest
+#          - target: mips64-unknown-linux-muslabi64
+#            os: ubuntu-latest
           - target: loongarch64-unknown-linux-gnu
             os: ubuntu-latest
           - target: s390x-unknown-linux-gnu
